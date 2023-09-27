@@ -1,0 +1,39 @@
+<!-- Calculator Body -->
+
+<div class="container">
+
+<div>
+  <h1 class="tex-center header text-primary mb-5">  simple Calculator</h1>
+
+  <div class="calc-body">
+
+    <!-- Calculator Display Screen -->
+    <div class="calc-screen" style="height: 70px;">
+        <div id="calc-operation" >{{result}}</div>
+        <div id="calc-typed"></div>
+    </div>
+    
+    <!-- Calculator Buttons -->
+    <div class="calc-button-row">
+        <button class="opt" (click)="getAction('/')">/</button>
+        <button (click)="getAction(7)">7</button>
+        <button (click)="getAction(8)">8</button>
+        <button (click)="getAction(9)">9</button>
+        <button class="opt"  (click)="getAction('*')">*</button>
+        <button (click)="getAction(4)">4</button>
+        <button (click)="getAction(5)">5</button>
+        <button (click)="getAction(6)">6</button>
+        <button class="opt" (click)="getAction('-')">-</button>
+        <button (click)="getAction(1)">1</button>
+        <button (click)="getAction(2)">2</button>
+        <button (click)="getAction(3)">3</button>
+        <button class="opt" (click)="getAction('+')">+</button>
+        <button (click)="getAction(0)">0</button>
+        <button (click)="getAction('.')">.</button>
+        <button class="ac" (click)="reset()" >AC</button>
+        <button class="opt"  (click)="del()">Del</button>
+        <button class="opt w-75"  (click)="equal()">=</button>
+    </div>
+    </div>
+</div>
+</div>
